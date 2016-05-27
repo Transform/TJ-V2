@@ -1,0 +1,8 @@
+DiscountRequirement.HadSpentAmount
+DiscountRequirement.ShippingCountryIs
+DiscountRequirement.ShippingPostalCodeIs
+Payments.CCAvenue
+Shipping.FixedRate
+Shipping.ByWeight
+Widgets.GoogleAnalytics
+Widgets.NivoSlider

@@ -408,8 +408,8 @@
     <Compile Include="Validators\Common\ContactUsValidator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\InstalledPlugins.txt" />
     <Content Include="App_Data\Install\create_required_data.sql" />
-    <Content Include="App_Data\Install\create_sample_data.sql" />
     <Content Include="App_Data\Localization\Installation\installation.ar.xml" />
     <Content Include="App_Data\Localization\Installation\installation.bg.xml" />
     <Content Include="App_Data\Localization\Installation\installation.bn-bd.xml" />
@@ -1929,6 +1929,7 @@
     <Content Include="Scripts\jquery.fancybox-1.3.4.pack.js" />
     <Content Include="Scripts\public.onepagecheckout.js" />
     <Content Include="Scripts\public.common.js" />
+    <Content Include="Setup\01_states.txt" />
     <Content Include="Themes\NopShop\Content\bootstrap-3.2.0\css\bootstrap-theme.css" />
     <Content Include="Themes\NopShop\Content\bootstrap-3.2.0\css\bootstrap-theme.min.css" />
     <Content Include="Themes\NopShop\Content\bootstrap-3.2.0\css\bootstrap.css" />

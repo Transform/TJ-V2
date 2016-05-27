@@ -1,0 +1,36 @@
+﻿IN,Andhra Pradesh,AP,TRUE,1
+IN,Arunachal Pradesh,AR,TRUE,1
+IN,Assam,AS,TRUE,1
+IN,Bihar,BR,TRUE,1
+IN,Chhattisgarh,CT,TRUE,1
+IN,Goa,GA,TRUE,1
+IN,Gujarat,GJ,TRUE,1
+IN,Haryana,HR,TRUE,1
+IN,Himachal Pradesh,HP,TRUE,1
+IN,Jammu and Kashmir,JK,TRUE,1
+IN,Jharkhand,JH,TRUE,1
+IN,Karnataka,KA,TRUE,1
+IN,Kerala,KL,TRUE,1
+IN,Madhya Pradesh,MP,TRUE,1
+IN,Maharashtra,MH,TRUE,1
+IN,Manipur,MN,TRUE,1
+IN,Meghalaya,ML,TRUE,1
+IN,Mizoram,MZ,TRUE,1
+IN,Nagaland,NL,TRUE,1
+IN,Odisha,OR,TRUE,1
+IN,Punjab,PB,TRUE,1
+IN,Rajasthan,RJ,TRUE,1
+IN,Sikkim,SK,TRUE,1
+IN,Tamil Nadu,TN,TRUE,1
+IN,Telangana,TG,TRUE,1
+IN,Tripura,TR,TRUE,1
+IN,Uttarakhand ,UT,TRUE,1
+IN,Uttar Pradesh,UP,TRUE,1
+IN,West Bengal,WB,TRUE,1
+IN,Andaman and Nicobar Islands,AN,TRUE,1
+IN,Chandigarh,CH,TRUE,1
+IN,Dadra and Nagar Haveli,DN,TRUE,1
+IN,Daman and Diu,DD,TRUE,1
+IN,Delhi,DL,TRUE,1
+IN,Lakshadweep,LD,TRUE,1
+IN,Puducherry,PY,TRUE,1

@@ -1,0 +1,52 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.DiscountRules.ShippingPostalCode.Models.RequirementModel
+@using Nop.Web.Framework;
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#saveShippingPostalCoderequirement@(Model.RequirementId)').click(function () {
+            var discountId = @Model.DiscountId;
+            var requirementId = @Model.RequirementId;
+            var postalCodes = $("#@Html.FieldIdFor(model => model.PostalCodes)").val();
+
+            var postData = {
+                discountId: discountId,
+                discountRequirementId: requirementId,
+                postalCodes: postalCodes
+            };
+            addAntiForgeryToken(postData);
+
+            $.ajax({
+                cache:false,
+                type: "POST",
+                url: "@(Url.Action("Configure", "DiscountRulesShippingPostalCode"))",
+                data: postData,
+                success: function (data) {
+                    $('#pnl-save-requirement-result@(Model.RequirementId)').fadeIn("slow").delay(1000).fadeOut("slow");
+                    //notify parent if it's a new requirement
+                    @if (Model.RequirementId == 0)
+                    {
+                        <text>$("#discountRequirementContainer").trigger('nopnewdiscountruleadded', [data.NewRequirementId]);</text>
+                    }
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    alert('@Html.Raw(HttpUtility.JavaScriptStringEncode(T("Admin.Promotions.Discounts.Requirements.FailedToSave").Text))');
+                }
+            });
+        });
+    });
+</script>
+    
+    <table class="adminContent">
+        <tr>
+            <td class="adminTitle"> 
+                @Html.NopLabelFor(model => model.PostalCodes):
+            </td>
+            <td class="adminData">
+                <div>@Html.EditorFor(model => model.PostalCodes) <input type="button" id="saveShippingPostalCoderequirement@(Model.RequirementId)" class="k-button" value="@T("Admin.Common.Save")" /></div>
+                <div id="pnl-save-requirement-result@(Model.RequirementId)" style="display:none;">@T("Admin.Promotions.Discounts.Requirements.Saved")</div>
+            </td>
+        </tr>
+    </table>

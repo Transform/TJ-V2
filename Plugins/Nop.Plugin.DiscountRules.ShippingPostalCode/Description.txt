@@ -1,0 +1,8 @@
+﻿Group: Discount requirements
+FriendlyName: Shipping Postal Code is
+SystemName: DiscountRequirement.ShippingPostalCodeIs
+Version: 1.00
+SupportedVersions: 3.70
+Author: TangyJars team
+DisplayOrder: 1
+FileName: Nop.Plugin.DiscountRules.ShippingPostalCode.dll
